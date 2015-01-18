@@ -6,7 +6,6 @@ cssURL="style.css"
 
 function gen {
   pandoc -c $cssURL -s -H ${root}html_header.html --webtex "${root}header.md" "${root}${filename}.md" -o "${root}${filename}.html"
-  #pandoc "${root}${filename}.md" -o "${root}${filename}.pdf"
 }
 
 function openEditor {
